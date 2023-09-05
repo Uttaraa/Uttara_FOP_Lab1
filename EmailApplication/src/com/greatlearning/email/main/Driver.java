@@ -47,7 +47,9 @@ public class Driver {
 			break;
 
 		}
-
+		
+		//verfiying if all the fields are filled otherwise display message for invalid details
+		
 		if(employee.getFirstName() != null && employee.getLastName() != null && employee.getDepartment() != null) {
 			service.generateEmail(employee);
 			service.generatePassword(employee);
