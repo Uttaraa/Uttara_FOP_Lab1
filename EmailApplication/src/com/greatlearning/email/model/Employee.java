@@ -7,12 +7,16 @@ public class Employee {
 	private String department;
 	private String emailAddress;
 	private String password;
+
+	//Parameterized Constructor of Employee Class
 	
 	public Employee(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		
 	}
+
+	//Implementing getters and setters, no setter firstName and lastName as we're passing it through Strings.
 
 	public String getFirstName() {
 		return firstName;
